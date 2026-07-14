@@ -28,7 +28,7 @@ nav{
     justify-content:space-between;
     align-items:center;
     padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3)
 
 }
 
@@ -128,14 +128,29 @@ nav a{
 }
 
 
-
-.hero-image img{
+.hero-image{
 
     width:280px;
     height:280px;
     border-radius:50%;
     object-fit:cover;
+}
+.hero-image-ring {
+    width: fit-content;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(45deg, #00c6ff, #ff6ec7, #0072ff);
+    background-size: 300% 300%;
+    animation: rotateRing 6s linear infinite;
+}
 
+@keyframes rotateRing {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 
