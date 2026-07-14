@@ -27,15 +27,32 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 
 }
 
 
 .logo{
 
-    color:white;
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
+.logo img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.logo h2{
+    margin: 0;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
 
 nav ul{
 
