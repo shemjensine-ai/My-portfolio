@@ -450,6 +450,6 @@ transform:translateY(0);
     .click-finger {
         font-size: 26px;
         right: -5px;
-        top: -7px;
+        top: 0px;
     }
 }
