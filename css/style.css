@@ -449,7 +449,7 @@ transform:translateY(0);
 @media (max-width: 600px) {
     .click-finger {
         font-size: 26px;
-        right: -5px;
-        top: 0px;
+        right: 5px;
+        top: 5px;
     }
 }
