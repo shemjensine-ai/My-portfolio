@@ -1,27 +1,27 @@
 // Dark / Light Mode Toggle
-
-const button = document.getElementById("theme-btn");
-
-
-button.onclick = function(){
-
-    document.body.classList.toggle("dark");
+const themeToggle = document.getElementById("theme-toggle");
 
 
-    if(document.body.classList.contains("dark")){
+// Load saved theme
+if (localStorage.getItem("theme") === "dark") {
+    document.body.classList.add("dark");
+    themeToggle.checked = true;
+}
 
-        button.innerHTML = "☀️";
 
+// Toggle theme
+themeToggle.addEventListener("change", () => {
+
+    if (themeToggle.checked) {
+        document.body.classList.add("dark");
+        localStorage.setItem("theme", "dark");
+
+    } else {
+        document.body.classList.remove("dark");
+        localStorage.setItem("theme", "light");
     }
 
-    else{
-
-        button.innerHTML = "🌙";
-
-    }
-
-};
-
+});
 
 
 // Smooth Scrolling
