@@ -41,7 +41,7 @@ aspiring Software Engineer
 
 Computer Science and Engineering Student | Aspiring Software Engineer
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/shemjensine-ai
 
 ## License
 
