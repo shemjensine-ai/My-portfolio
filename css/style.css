@@ -114,19 +114,46 @@ nav a{
 }
 
 
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: #2563eb;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
 
-.button{
-
-    display:inline-block;
-    margin-top:25px;
-    padding:12px 25px;
-    background:#2563eb;
-    color:white;
-    border-radius:25px;
-    text-decoration:none;
-
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+.button::before {
+    content: "";
+    position: absolute;
+    inset: -3px;
+    border-radius: 28px;
+    background: linear-gradient(45deg, #00c6ff, #ff6ec7, #0072ff);
+    background-size: 300% 300%;
+    animation: rotateRing 6s linear infinite;
+    z-index: -2;
 }
 
+.button::after {
+    content: "";
+    position: absolute;
+    inset: 3px;
+    border-radius: 22px;
+    background: #2563eb;
+    z-index: -1;
+}
+@keyframes rotateRing {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
 
 .hero-image{
     width:min(280px,80vw);
